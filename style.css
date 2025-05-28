@@ -1,0 +1,284 @@
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    height: 7%;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #f1f1f1;
+}
+
+#nav h3 {
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    white-space: nowrap;
+    margin-right: 40px; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: 40px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+#nav button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none; /* 這句超重要，讓它滑鼠事件失效 */
+}
+
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    font-size: 100px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+#loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+#nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+#page>h3{
+    position: absolute;
+    top: 55%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #7c7c7c;
+    left: 5%;
+}
+#page>h4{
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#page1>#right-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page1>#right-text>h3{
+    font-weight: 400;
+    color: #7c7c7c;
+}
+#page1>#right-text>h1{
+    line-height: 1.5;
+    font-size: 50px;
+}
+#page0 h1 {
+  display: flex;
+  justify-content: flex-end; /* 讓圖片靠右 */
+  align-items: center;
+  padding-right: 300px; /* ✅ 加這行讓右邊空出來 */
+}
+
+
+#page0 img {
+  width: 380px;     /* 控制縮小程度 */
+  height: auto;     /* 保持圖片比例 */
+}
+#page1>#left-text{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-align: end;
+    
+}
+#page1 > #left-text > h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #7EA8F5;
+}
+
+#page1 > #left-text > h1 img {
+    max-width: 200px; 
+    height: auto;
+}
+
+#page1>#left-text>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page2>#text1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page2>#text1>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page2 > #text1 > h1 {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+#page2 > #text1 > h1 img {
+    max-width: 400px; 
+    height: auto;
+}
+
+#page2>#text2{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    text-align: end;
+}
+#page2>#text2>p{
+    color: #7c7c7c;
+    font-weight: 500;
+}
+#page2 > #page2-1 > h1 {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 0; 
+}
+
+
+
+#page2-1 img {
+  width: 200px;     /* 香菇 */
+  height: auto;    
+}
+#page3>#text3{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    text-align: end;
+}
+#page3>#text3>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page3>#text3>h1{
+    font-size: 70px;
+    color: #96BAF5;
+
+}
+#text4 iframe {
+  position: relative;
+  z-index: 11;
+  width: 600px;
+  height: 370px;
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+
+
